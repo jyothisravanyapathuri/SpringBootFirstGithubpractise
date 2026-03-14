@@ -13,9 +13,20 @@ public class ControllerClass {
 
 	}
 	
+	
+	@GetMapping("/secondmessage")
+	public String secondMessage() {
+		System.out.println(".......in second controller...");
+		return "iam from second method";
+
+	}
+
 	@GetMapping("/thirdmessage")
 	public String getThirdmessage() {
 		System.out.println("...iam from second controller...");
 		return "third alert";
 	}
+
+	
+	
 }
