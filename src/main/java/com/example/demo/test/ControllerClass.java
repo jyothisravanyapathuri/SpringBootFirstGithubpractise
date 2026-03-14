@@ -12,4 +12,11 @@ public class ControllerClass {
 		return "good morning";
 
 	}
+	
+	
+	@GetMapping("/secondmessage")
+	public String secondMessage() {
+		System.out.println(".......in second controller...");
+		return "iam from second method";
+	}
 }
